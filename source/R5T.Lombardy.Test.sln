@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Lombardy.Test.Construction", "R5T.Lombardy.Test.Construction\R5T.Lombardy.Test.Construction.csproj", "{A0FDFB90-C28E-4467-A9A2-2297BF041D3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Lombardy.Test.Construction", "R5T.Lombardy.Test.Construction\R5T.Lombardy.Test.Construction.csproj", "{A0FDFB90-C28E-4467-A9A2-2297BF041D3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Lombardy.Test", "R5T.Lombardy.Test\R5T.Lombardy.Test.csproj", "{D5BAF745-5AE2-41B9-8F14-C4AC320E7DE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Lombardy.Test", "R5T.Lombardy.Test\R5T.Lombardy.Test.csproj", "{D5BAF745-5AE2-41B9-8F14-C4AC320E7DE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Dependencies", "_Dependencies", "{E6D57515-4E54-40E8-8449-E20DA3825001}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Lombardy.Base", "..\..\R5T.Lombardy.Base\source\R5T.Lombardy.Base\R5T.Lombardy.Base.csproj", "{5D736E00-B2D6-4193-948A-7619F01260EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A0FDFB90-C28E-4467-A9A2-2297BF041D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +45,26 @@ Global
 		{D5BAF745-5AE2-41B9-8F14-C4AC320E7DE6}.Release|x64.Build.0 = Release|Any CPU
 		{D5BAF745-5AE2-41B9-8F14-C4AC320E7DE6}.Release|x86.ActiveCfg = Release|Any CPU
 		{D5BAF745-5AE2-41B9-8F14-C4AC320E7DE6}.Release|x86.Build.0 = Release|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Debug|x64.Build.0 = Debug|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Debug|x86.Build.0 = Debug|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Release|x64.Build.0 = Release|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{5D736E00-B2D6-4193-948A-7619F01260EA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D736E00-B2D6-4193-948A-7619F01260EA} = {E6D57515-4E54-40E8-8449-E20DA3825001}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {076A83C1-D102-4BBA-8E75-0F434ABDBC25}
 	EndGlobalSection
 EndGlobal
