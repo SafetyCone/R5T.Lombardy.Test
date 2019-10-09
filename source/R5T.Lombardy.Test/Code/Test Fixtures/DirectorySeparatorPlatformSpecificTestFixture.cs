@@ -38,9 +38,9 @@ namespace R5T.Lombardy.Test
         /// This should be in a <see cref="ClassInitializeAttribute"/> static method to avoid performing the same work for each test, but that would have to be done as a static method of the derived class, which would mean the test-fixture would require setup outside of itself.
         /// </summary>
         [TestInitialize]
-        public void Initialization(TestContext testContext)
+        public void Initialization()
         {
-            PlatformOperator.Platform = Platform.NonWindows;
+            PlatformOperator.Platform = this.Platform;
         }
 
         [TestCleanup]

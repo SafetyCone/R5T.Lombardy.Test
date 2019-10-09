@@ -33,7 +33,7 @@ namespace R5T.Lombardy.Test
 
             var actual = this.StringlyTypedPathOperator.GetPathParts(filePath);
 
-            Assert.AreEqual(expected, actual);
+            CollectionAssert.AreEqual(expected, actual);
         }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace R5T.Lombardy.Test
 
             var actual = this.StringlyTypedPathOperator.GetPathParts(filePath);
 
-            Assert.AreEqual(expected, actual);
+            CollectionAssert.AreEqual(expected, actual);
         }
 
         /// <summary>

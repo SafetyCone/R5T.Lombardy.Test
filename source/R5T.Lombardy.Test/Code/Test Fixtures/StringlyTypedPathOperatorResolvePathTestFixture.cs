@@ -75,8 +75,8 @@ namespace R5T.Lombardy.Test
         [TestMethod]
         public void ResolveNonWindowsDirectoryPath()
         {
-            var unresolvedPath = ExampleDirectoryPaths.WindowsDirectory01FromWindowsDirectory04PathUnresolved;
-            var expected = ExampleDirectoryPaths.WindowsDirectory01Path;
+            var unresolvedPath = ExampleDirectoryPaths.NonWindowsDirectory01FromNonWindowsDirectory04PathUnresolved;
+            var expected = ExampleDirectoryPaths.NonWindowsDirectory01Path;
 
             var actual = this.StringlyTypedPathOperator.ResolvePath(unresolvedPath);
 

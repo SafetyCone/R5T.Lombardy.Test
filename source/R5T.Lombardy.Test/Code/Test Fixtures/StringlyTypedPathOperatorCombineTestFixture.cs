@@ -78,7 +78,7 @@ namespace R5T.Lombardy.Test
         public void CombineNonWindowsFile01Parts()
         {
             var pathParts = ExampleFilePaths.NonWindowsFile01PathParts;
-            var expected = ExampleFilePaths.WindowsFile01Path;
+            var expected = ExampleFilePaths.NonWindowsFile01Path;
 
             var actual = this.StringlyTypedPathOperator.CombineWindows(pathParts);
 

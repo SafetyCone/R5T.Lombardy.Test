@@ -134,7 +134,7 @@ namespace R5T.Lombardy.Test
             var rootedPath = ExampleFilePaths.WindowsFile01Path;
             var expected = false;
 
-            var actual = this.StringlyTypedPathOperator.IsRootedPath(rootedPath);
+            var actual = this.StringlyTypedPathOperator.IsRelativePath(rootedPath);
 
             Assert.AreEqual(expected, actual);
         }
