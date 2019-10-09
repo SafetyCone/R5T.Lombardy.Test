@@ -7,7 +7,7 @@ namespace R5T.Lombardy.Test
 {
     public abstract class DirectorySeparatorOperatorTestArticleTestFixture
     {
-        #region Initialization
+        #region Test-Fixture
 
         public IDirectorySeparatorOperatorTestArticle DirectorySeparatorOperatorTestArticle { get; }
 

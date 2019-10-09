@@ -7,7 +7,7 @@ namespace R5T.Lombardy.Test
 {
     public abstract class StringlyTypedPathOperatorTestArticleTestFixture
     {
-        #region Initialization
+        #region Test-Fixture
 
         public IStringlyTypedPathOperatorTestArticle StringlyTypedPathOperatorTestArticle { get; set; }
 

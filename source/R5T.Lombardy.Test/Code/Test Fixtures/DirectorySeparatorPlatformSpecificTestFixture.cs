@@ -12,7 +12,7 @@ namespace R5T.Lombardy.Test
     /// </summary>
     public abstract class DirectorySeparatorPlatformSpecificTestFixture
     {
-        #region Test Fixture
+        #region Test-Fixture
 
         public IDirectorySeparatorOperator DirectorySeparatorOperator { get; set; }
 
@@ -28,9 +28,26 @@ namespace R5T.Lombardy.Test
         /// <summary>
         /// Provided by derived class to enable platform indirection.
         /// </summary>
+        public abstract Platform Platform { get; }
         public abstract char PlatformDirectorySeparatorChar { get; }
         public abstract string PlatformDirectorySeparator { get; }
 
+
+        /// <summary>
+        /// Set the platform for use in testing.
+        /// This should be in a <see cref="ClassInitializeAttribute"/> static method to avoid performing the same work for each test, but that would have to be done as a static method of the derived class, which would mean the test-fixture would require setup outside of itself.
+        /// </summary>
+        [TestInitialize]
+        public void Initialization(TestContext testContext)
+        {
+            PlatformOperator.Platform = Platform.NonWindows;
+        }
+
+        [TestCleanup]
+        public void Cleanup()
+        {
+            PlatformOperator.ResetPlatform();
+        }
 
         [TestMethod]
         public void PlatformDefaultDirectorySeparatorChar()
