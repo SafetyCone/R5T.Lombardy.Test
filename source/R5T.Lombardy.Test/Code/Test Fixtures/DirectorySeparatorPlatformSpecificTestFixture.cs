@@ -40,13 +40,13 @@ namespace R5T.Lombardy.Test
         [TestInitialize]
         public void Initialization()
         {
-            PlatformOperator.Platform = this.Platform;
+            PlatformOperations.Platform = this.Platform;
         }
 
         [TestCleanup]
         public void Cleanup()
         {
-            PlatformOperator.ResetPlatform();
+            PlatformOperations.ResetPlatform();
         }
 
         [TestMethod]
