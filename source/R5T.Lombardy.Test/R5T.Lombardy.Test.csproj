@@ -9,6 +9,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Lombardy.Base\source\R5T.Lombardy.Base\R5T.Lombardy.Base.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Rugia\source\R5T.Rugia\R5T.Rugia.csproj" />
     <ProjectReference Include="..\..\..\R5T.Salamis\source\R5T.Salamis\R5T.Salamis.csproj" />
   </ItemGroup>
 </Project>
